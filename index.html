@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allan M Chingombe — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">AMC</a>
+
+    <!-- Hamburger button (visible on mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <!-- Decorative grid background -->
+    <div class="hero-grid-bg"></div>
+
+    <div class="hero-inner">
+
+      <!-- Profile Photo -->
+      <div class="hero-photo-wrap">
+        
+        <img src="images/profile.jpg" alt="Allan M Chingombe" class="hero-photo">
+        <div class="hero-photo-ring"></div>
+      </div>
+
+      <!-- Hero Text -->
+      <div class="hero-text">
+        <p class="hero-greeting">Welcome to my portfolio</p>
+        <h1 class="hero-name">Allan M. Chingombe</h1>
+        <p class="hero-tagline">
+          Information Security Student &nbsp;·&nbsp; Ethical Hacker &nbsp;·&nbsp;  Aspiring Technopreneur
+        </p>
+        <p class="hero-intro">
+          I'm a first-year Information Security &amp; Assurance student at the
+          Harare Institute of Technology, driven by a passion for creativity,
+          innovation, and using technology to solve real-world problems. I'm on
+          a mission to build a cybersecurity company that protects Africa's
+          digital future.
+        </p>
+        <a href="projects.html" class="hero-cta">
+          View My Work <span class="arrow">→</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Allan M Chingombe. All rights reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT — Hamburger menu toggle -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

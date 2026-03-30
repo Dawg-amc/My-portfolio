@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Allan M Chingombe</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">AMC</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PROJECTS PAGE CONTENT -->
+  <main class="projects-page">
+    <div class="section-wrap">
+
+      <!-- Section heading -->
+      <p class="section-label">What I've built</p>
+      <h1 class="section-title">Projects</h1>
+      <div class="section-line"></div>
+
+      <!-- CSS Grid layout — cards go inside this div -->
+      <div class="projects-grid">
+
+     <!-- PROJECT 1: Password Strength Checker -->
+        <article class="project-card">
+          <div class="card-img card-img-1">
+            🔐
+            <span class="card-tag">HTML · CSS · JS</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Password Strength Checker</h2>
+            <p class="card-desc">
+              A tool that analyses passwords in real time and rates them from Weak
+              to Strong based on length, uppercase, lowercase, numbers, and symbols.
+              Includes a one-click strong password generator.
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/Dawg-amc/password-strength-checker"
+                 target="_blank" rel="noopener" class="btn-primary">GitHub</a>
+              <a href="password-checker/index.html" class="btn-outline">Live Demo</a>
+            </div>
+          </div>
+        </article>
+        
+      <!-- PROJECT 2: To-Do List App -->
+        <article class="project-card">
+          <div class="card-img card-img-2">
+            ✅
+            <span class="card-tag">HTML · CSS · JS</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">To-Do List App</h2>
+            <p class="card-desc">
+              A clean, interactive task manager where you can add, complete, and
+              delete tasks. Features filter tabs for All, Active, and Completed
+              tasks, plus a counter showing remaining and finished items.
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/Dawg-amc/todo-list-app"
+                 target="_blank" rel="noopener" class="btn-primary">GitHub</a>
+              <a href="todo-app/index.html" class="btn-outline">Live Demo</a>
+            </div>
+          </div>
+        </article>
+        
+      <!-- PROJECT 3: Caesar Cipher -->
+        <article class="project-card">
+          <div class="card-img card-img-3">
+            🔑
+            <span class="card-tag">HTML · CSS · JS</span>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Caesar Cipher Encoder/Decoder</h2>
+            <p class="card-desc">
+              An interactive implementation of the classic Caesar Cipher used in
+              cryptography. Enter any message, choose a shift key (1–25), and
+              instantly encode or decode it. Relevant to my Information Security studies.
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/Dawg-amc/caesar-cipher"
+                 target="_blank" rel="noopener" class="btn-primary">GitHub</a>
+              <a href="caesar-cipher/index.html" class="btn-outline">Live Demo</a>
+            </div>
+          </div>
+        </article>  
+
+      </div><!-- end .projects-grid -->
+    </div><!-- end .section-wrap -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Allan M Chingombe. All rights reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT — Hamburger menu toggl -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
