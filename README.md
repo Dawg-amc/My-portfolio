@@ -1,7 +1,3 @@
-# Allan M. Chingombe — Personal Portfolio
-
-A personal portfolio website built for the **Web Technologies Practical 1** assignment at the Harare Institute of Technology.
-
 ## Project Description
 
 This is a multi-page personal portfolio website showcasing my background, technical skills, projects, and contact information. It is designed with a professional Navy & Gold colour scheme and is fully responsive across mobile, tablet, and desktop devices.
